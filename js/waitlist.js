@@ -15,7 +15,7 @@
   var statusEl = document.getElementById("form-status");
   var submitBtn = form.querySelector("button[type='submit']");
   var defaultLabel = submitBtn.textContent;
-  var contact = "ryan@rhinoroster.com";
+  var contact = "info@rhinoroster.com";
 
   function setStatus(message, isError) {
     statusEl.textContent = message;
