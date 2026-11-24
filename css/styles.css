@@ -116,6 +116,7 @@ a:hover {
 .site-header,
 .hero,
 .features-inner,
+.legal,
 .site-footer {
   width: min(100% - (var(--gutter) * 2), var(--max));
   margin-inline: auto;
@@ -566,6 +567,57 @@ h2 {
   .why h2,
   .signoff strong,
   .signoff span {
+    color: #000;
+  }
+}
+
+
+.legal {
+  max-width: 44rem;
+  padding: 1.5rem 0 4rem;
+}
+
+.legal h1 {
+  font-size: clamp(1.85rem, 4.5vw, 2.6rem);
+  line-height: 1.15;
+}
+
+.legal-date {
+  margin: 0.85rem 0 1.5rem;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.legal p + p,
+.legal ul {
+  margin-top: 1.15rem;
+}
+
+.legal ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+.legal li + li {
+  margin-top: 0.55rem;
+}
+
+.legal li,
+.legal p {
+  color: var(--ink-soft);
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.25rem;
+}
+
+@media print {
+  .legal h1,
+  .legal p,
+  .legal li,
+  .legal-date {
     color: #000;
   }
 }
